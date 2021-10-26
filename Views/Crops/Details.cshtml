@@ -1,0 +1,48 @@
+﻿@model OsevniTahak.Models.Crop
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Crop</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Nazev)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Nazev)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Odruda)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Odruda)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Celed)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Celed)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Vyrobce)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Vyrobce)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Trat)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Trat)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
